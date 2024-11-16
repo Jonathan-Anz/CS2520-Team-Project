@@ -9,4 +9,5 @@ TODO:
 - Implement the Monte Carlo method
 - Use the time module to get the execution time of each method
 - Add more tests
+- Add more methods?
 - Graph data for visual display of accuracy and time?
