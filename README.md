@@ -12,4 +12,3 @@ TODO:
 - Compare how many iterations each method takes to get to an accurate value
 - Get test runs
 - Graph the data for visual display of accuracy and time?
-- 
