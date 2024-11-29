@@ -5,6 +5,7 @@ class Archimedes:
 
     # Function to calculate pi with n iterations (sides)
     # Formula: PI = sin(360 / 2n) * n
+    @staticmethod
     def Calculate_PI(n):
 
         try:
