@@ -8,7 +8,7 @@ from PI_Leibniz import Leibniz
 from PI_MonteCarlo import MonteCarlo
 
 import math
-import time
+import timeit
 
 def main():
 
@@ -16,25 +16,31 @@ def main():
 
     # Archimedes method
     print("Archimedes Method:")
+    archimedes_time = timeit.timeit(lambda: Archimedes.Calculate_PI(50), number=1)
     archimedesPI = Archimedes.Calculate_PI(50)
     print("pi =", archimedesPI)
     print("Difference from real pi:", abs(math.pi - archimedesPI))
+    print("Execution time: {:.6f} seconds".format(archimedes_time))
 
     print()
 
     # Leibniz method
     print("Leibniz Method:")
+    leibniz_time = timeit.timeit(lambda: Leibniz.Calculate_PI(50), number=1)
     leibnizPI = Leibniz.Calculate_PI(50)
     print("pi =", leibnizPI)
     print("Difference from real pi:", abs(math.pi - leibnizPI))
+    print("Execution time: {:.6f} seconds".format(leibniz_time))
 
     print()
 
     # Monte Carlo method
     print("Monte Carlo Method:")
+    montecarlo_time = timeit.timeit(lambda: MonteCarlo.Calculate_PI(50), number=1)
     monteCarloPI = MonteCarlo.Calculate_PI(50)
     print("pi =", monteCarloPI)
     print("Difference from real pi:", abs(math.pi - monteCarloPI))
+    print("Execution time: {:.6f} seconds".format(montecarlo_time))
 
     print()
 
