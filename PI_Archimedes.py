@@ -18,3 +18,6 @@ class Archimedes:
         except ZeroDivisionError:
             print("n cannot be zero!")
             return 0
+        
+    def getName():
+        return "Archimedes"

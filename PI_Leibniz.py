@@ -14,3 +14,6 @@ class Leibniz:
             pi += ((-1)**k) / (2 * k + 1)
         # Multiply by 4 to get π
         return 4 * pi
+    
+    def getName():
+        return "Leibniz"

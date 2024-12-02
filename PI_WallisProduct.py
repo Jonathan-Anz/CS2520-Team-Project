@@ -19,5 +19,8 @@ class WallisProduct:
         
         # Multiply the product by 2 to get π
         pi = product * 2
-        
+
         return pi
+    
+    def getName():
+        return "Wallis Product"

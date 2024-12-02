@@ -23,3 +23,6 @@ class MonteCarlo:
 
         # Estimate PI with the formula
         return 4 * (inside_count / n)
+    
+    def getName():
+        return "Monte Carlo"
